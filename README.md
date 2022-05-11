@@ -4,7 +4,8 @@
 2. Authenticate ngrok as per ngrok's [getting started page](https://dashboard.ngrok.com/get-started/your-authtoken). Add the `ssh` tunnel to ngrok's config file. Default location is: `~/.config/ngrok/ngrok.yml`.
 3. (Alternate to step 2) Copy the `ngrok.yml` config file in this repo to `~/.config/ngrok/` and replace the authtoken in file with own.
 4. Find the location of the `ngrok` executable using `whereis ngrok` and edit the `ExecStart` parameter in the `ngrok.service` file accordingly.
-5. run the manual install script: `sudo manual_install.sh`. It copies the service file to the right location and enables the ngrok service using systemctl.
+5. Run the manual install script: `sudo manual_install.sh` (or execute commands therein yourself). It copies the service file to the right location and enables the ngrok service using systemctl.
+6. Check the executable logs with `sudo journalctl -u ngrok.service`.
 
 ## Installation - Orig
 
