@@ -1,3 +1,4 @@
+version: "2"
 authtoken: <add_your_token_here>
 region: us
 console_ui: true
@@ -6,4 +7,3 @@ tunnels:
         remote_addr: 3.tcp.ngrok.io:26864
         proto: tcp
         addr: 22
-#version: "2"
