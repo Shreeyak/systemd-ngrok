@@ -1,9 +1,9 @@
 authtoken: <add_your_token_here>
-region: ap
+region: us
+console_ui: true
 tunnels:
-  web:
-    proto: http
-    addr: 80
-  ssh:
-    proto: tcp
-    addr: 22
+    ssh:
+        remote_addr: 3.tcp.ngrok.io:26864
+        proto: tcp
+        addr: 22
+#version: "2"
